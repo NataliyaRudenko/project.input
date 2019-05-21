@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+ 
+    <style>
+        .wrapper{
+            width: 900px;
+            height: 683px;
+            margin: auto;
+            border: 1px solid mediumseagreen;
+        }
+
+        .top-menu{
+            width: 900px;
+            height: 38px;
+            margin: auto;
+            border-bottom: 1px solid mediumseagreen;
+            background-color: yellowgreen;
+        }
+
+        .menu{
+            display: inline-block;
+            margin-top: 4px;
+        }
+
+        .menu li{
+            text-decoration: none;
+        }
+
+        .menu a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Segoe UI';
+        }
+
+        .main{
+            width: 900px;
+            height: 605px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main > .block {
+            width: 440px;
+            height: 605px;
+        }
+
+        .list{
+            font-family: 'Segoe UI';
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+
+        .span{
+            font-size: 12px;
+            font-weight: bolder;
+        }
+
+        .input{
+            margin-left: 75px;
+            size: 25px;
+        }
+
+        .footer{
+            width: 900px;
+            height: 38px;
+            background-color: lavender;
+            margin: auto;
+            border-top: 1px solid lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer > .button{
+            border:1px solid mediumseagreen;
+            background-color: yellowgreen;
+            color: white;
+            font-size: 15px;
+            margin-left: 4px;
+            padding: 3px 17px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-menu">
+            <ul class="menu">
+                <li class="menu li"><a href=""><span style="font-size: 15px; font-weight: bolder; margin-left: -33px">Contact Meneger</span></a></li>
+                <li class="menu li"><a href=""><span style="font-size: 12px; margin-left: 35px">More Actions</span></a></li>
+            </ul>
+        </div>
+        <div class="main">
+        <div class="block">
+            <div class="list">
+            <form action="SomePage.aspx" method="get" target="_blank">
+                <span class="span">First Name</span>
+                <input style="margin-left: 73px" type="text" name="name" value="" size="25" /> 
+                <br/><br/>
+                <span class="span">Last Name</span>
+                <input style="margin-left: 75px" type="text" name="name" value="" size="25" />
+                <br/><br/>
+                <span class="span">Address</span>
+                    <textarea cols="26" rows="7" name="textarea" style="resize: none; 
+                    margin-left: 90px"></textarea>
+                <br/><br/>
+                <span class="span">City</span>
+                <input style="margin-left: 113px" type="text" name="city" value="" size="25" />
+                <br/><br/>
+                <span class="span">State</span>
+                <select style="margin-left: 107px" name="select">
+                        <option value="state" selected="selected">-Select-</option>
+                </select>
+                <br/><br/>
+                <span class="span">Zip</span>
+                <input style="margin-left: 118px" type="text" name="zip" value="" size="25" /> 
+                <br/><br/>
+                <span class="span">Home Phone</span>
+                <input style="margin-left: 64px" type="text" name="phone" value="" size="11" /> 
+                <br/><br/>
+                <span class="span">Work Phone</span>
+                <input style="margin-left: 68px" type="text" name="phone" value="" size="25" /> 
+                <br/><br/>
+                <span class="span">Fax Number</span>
+                <input style="margin-left: 70px" type="text" name="fax" value="" size="11" /> 
+                <br/><br/>
+                <span class="span">Website</span>
+                <span style="font-size: 13px; margin-left: 95px">URL</span>
+                <input style="margin-left: 34px" type="text" name="site" value="" size="16" /> 
+                <br/>
+                <span style="font-size: 12px; margin-left: 145px">Link Name</span>
+                <input type="text" name="link" value="" size="16" /> 
+                <br/><br/>
+                <span class="span">Email Address</span>
+                <input style="margin-left: 63px" type="text" name="email" value="" size="25" /> 
+                <br/><br/>
+            </form>
+            </div>    
+        </div>
+        <div class="block">
+            <div class="list">
+            <div style="width: 200px; height: 30px">
+                <span class="span">When is the best time to contact you?</span></div>
+            <div style="float: right; width: 180px; height: 30px; margin-right: 30px">
+            <input type="radio" name="time" value=""> <span style="font-size: 12px">Morning</span> <br/>
+            <input type="radio" name="time" value=""/>
+            <span style="font-size: 12px">Afternoon</span> <br/>
+            <input type="radio" name="time" value="">
+            <span style="font-size: 12px">Evening</span> <br/>
+            </div>
+            <div style="width: 200px; height: 30px; clear: both; padding-top: 20px">
+                <span class="span">What is the best way to contact you?</span></div>
+            <div style="float: right; width: 180px; height: 30px; margin-right: 30px">
+                <input type="radio" name="way" value=""><span style="font-size: 12px"> Phone</span> <br/>
+            <input type="radio" name="way" value=""/>
+            <span style="font-size: 12px">Email</span> <br/>
+            <input type="radio" name="way" value="">
+            <span style="font-size: 12px">Fax</span> <br/>
+            </div>
+            <div style="width: 100px; height: 30px; margin-top: 90px">
+                <span class="span">Message</span></div>
+            <div style="float: right; margin-right: 35px"><textarea cols="24" rows="7" name="textarea" style="resize: none;"></textarea></div>
+        </div>
+        </div>
+        </div>
+    <div class="footer">
+        <input class="button" type="submit" name="submit" value="Submit" />
+        <input class="button" type="reset" name="reset" value="Reset" />
+    </div>
+    </div>
+    </body>
+</html>
